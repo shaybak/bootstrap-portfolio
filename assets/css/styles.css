@@ -68,3 +68,27 @@ hr {
 .text-container {
   float: left;
 }
+
+.portfolio-img {
+  max-width: 100%;
+  margin-bottom: 7%;
+  position: relative;
+}
+
+/* **************************************
+Found caption solution below from github
+Source: https://gist.github.com/petehouston/85dd33210c0764eeae55
+*************************************** */
+
+.caption {
+    position: absolute;
+    top: 65%;
+    width: 94.5%;
+    text-align: center;
+    background-color: teal;
+    padding-top: 16px;
+}
+
+.caption-text {
+  color: #fff;
+}
