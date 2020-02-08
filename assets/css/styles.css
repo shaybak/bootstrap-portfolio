@@ -1,8 +1,16 @@
+/* *************************************************
+SITE-WIDE TAG SETTINGS
+************************************************* */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background-image: url("../images/spiration-light.png");
   background-color: white;
   padding: 0;
-  margin: 0;
+  margin: 0 0 60px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -22,20 +30,56 @@ p {
 hr {
   border: solid 1px;
   border-color: #333333;
-  margin-top: 0;
+  margin: 0;
 }
 
+/* *************************************************
+SITE-WIDE CONTAINER SETTINGS
+************************************************* */
+/* Container for navbar & hr */
 .container1 {
   margin-top: 0 auto;
   padding: 0;
-}
-
-.container2 {
-  margin: 3% auto;
-  padding: 3%;
   background-color: #e1f4f3;
 }
 
+/* Container for main content */
+.container2 {
+  margin: 3% auto;
+  padding: 20px 3% 3%;
+  background-color: #e1f4f3;
+}
+
+/* *************************************************
+FOOTER
+************************************************* */
+
+.hr-footer {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+/* Container for footer (Source: Bootstrap Documentation: https://getbootstrap.com/docs/4.0/examples/sticky-footer/)*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #e1f4f3;
+  text-align: center;
+}
+
+.footer-text {
+  padding: 15px;
+  margin: 0;
+}
+
+
+/* *************************************************
+NAVBAR
+************************************************* */
+/* Customize brand font */
 .navbar-brand-custom {
   padding: 15px;
   font-family: 'Georgia', Times, 'Times New Roman', serif;
@@ -43,56 +87,79 @@ hr {
   margin-left: 0;
 }
 
-.navbar{
+/* Customize navbar color and margin */
+.navbar {
   background-color: #e1f4f3;
-  margin: 0;
+  margin: 0 3%;
 }
 
+/* Customize toggler color while preserving the .navbar-light class */
 .navbar-light .navbar-toggler {
-    border-color: #333333;
-  }
+  border-color: #333333;
+}
 
+/* Customize nav-link color while preserving the .navbar-light class */
 .navbar-light .navbar-nav .nav-link {
-    color: #333333;
+  color: #333333;
 }
 
+/* Customize nav-link pseudo-class :hover color while preserving the .navbar-light class */
 .navbar-light .navbar-nav .nav-link:hover {
-    color: darkblue;
+  color: darkblue;
 }
+
+/* *************************************************
+ABOUT
+************************************************* */
 
 .headshot-img {
-  padding: 3%;
+  padding: 15px 3% 3%;
   border-radius: 100%;
 }
 
-.text-container {
+/* Float text next to headshot-img */
+.about-text{
   float: left;
+  padding-top: 15px;
 }
 
+/* *************************************************
+PORTFOLIO
+************************************************* */
+
+.portfolio-content-container {
+  padding-bottom: 0;
+  margin-bottom: 150px;
+}
+
+/* Customize columns to remove padding so percentages of child divs match */
 .col-lg-6 {
   padding: 0;
 }
 
+/* Set to 95% of parent div so the portfolio-img elemnents don't touch or overlap */
 .portfolio-img {
   max-width: 95%;
   margin-bottom: 5%;
+  margin-top: 5%;
   position: relative;
 }
 
 /* **************************************
-Found caption solution below from github
+Found .caption solution below from github
 Source: https://gist.github.com/petehouston/85dd33210c0764eeae55
 *************************************** */
-
+/* Set caption position over portfolio-img elements (source above) */
 .caption {
-    position: absolute;
-    top: 65%;
-    width: 95%;
-    text-align: center;
-    background-color: teal;
-    padding-top: 16px;
+  position: absolute;
+  top: 65%;
+  width: 95%;
+  text-align: center;
+  background-color: teal;
+  padding-top: 16px;
 }
 
+/* Customize caption text */
 .caption-text {
   color: #fff;
 }
