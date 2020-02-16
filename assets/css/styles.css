@@ -145,6 +145,14 @@ PORTFOLIO
   position: relative;
 }
 
+.portfolio-img:hover {
+  /* max-width: 95%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  position: relative; */
+  opacity: 40%;
+}
+
 /* **************************************
 Found .caption solution below from github
 Source: https://gist.github.com/petehouston/85dd33210c0764eeae55
